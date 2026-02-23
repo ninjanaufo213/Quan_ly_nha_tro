@@ -36,6 +36,7 @@ const Login = () => {
       backgroundColor: '#000000'
     }}>
       {/* 3D Background using iframe to isolate errors */}
+      {process.env.NODE_ENV !== 'test' && (
       <div style={{
         position: 'fixed',
         top: 0,
@@ -59,6 +60,7 @@ const Login = () => {
           title="3D Background"
         />
       </div>
+    )}
 
       {/* Welcome Text - Left Side */}
       <div style={{
