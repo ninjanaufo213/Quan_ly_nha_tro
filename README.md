@@ -26,7 +26,10 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 
+📉 Tạo server trên aws (Sử dụng dịch vụ EC2) : Chọn loại t3.micro, hệ điều hành Ubuntu 24.04 LTS, Storage : 15GiB
+
 🔐 Cấu hình Bảo mật & Kết nối
+Tạo key pair : File .pem chỉ lưu tại máy mình giúp tăng cường bảo mật chống kẻ lạ truy cập server.
 AWS Security Group
 Để ứng dụng hoạt động, cần mở các cổng Inbound sau trên AWS Console:
 3000: Truy cập giao diện người dùng.
