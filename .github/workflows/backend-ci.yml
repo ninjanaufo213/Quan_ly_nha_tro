@@ -2,18 +2,15 @@ name: Backend CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
     paths:
-      - 'backend/**'                 # Chỉ chạy khi code backend thay đổi
-      - '.github/workflows/backend-ci.yml'
-  pull_request:
-    branches: [ "main" ]
-    paths:
-      - 'backend/**'
+      - "backend/**"
+      - ".github/workflows/backend-ci.yml"
 
 jobs:
   test-and-build-backend:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

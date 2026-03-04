@@ -1,3 +1,5 @@
+ip.txt
+inventory.ini
 # Bỏ qua tất cả node_modules (đặc biệt là frontend/node_modules)
 **/node_modules/
 
@@ -8,6 +10,7 @@
 backend/.env
 **/.env
 *.env
+*.pem
 
 # ============================================
 # PYTHON

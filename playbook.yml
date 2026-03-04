@@ -1,0 +1,9 @@
+---
+- name: Setup Docker Server
+  hosts: my_ec2
+  become: yes
+  vars:
+    docker_users:
+      - ubuntu
+  roles:
+    - docker

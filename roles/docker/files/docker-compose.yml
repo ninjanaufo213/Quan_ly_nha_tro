@@ -16,7 +16,7 @@ services:
           memory: 350M # Giới hạn RAM cho DB để không làm treo EC2
 
   backend:
-    image: vinhcute22/room-backend:latest 
+    image: vinhcute22/room_backend:latest 
     container_name: room_backend
     restart: always
     depends_on:
@@ -35,7 +35,7 @@ services:
           memory: 250M
 
   frontend:
-    image: vinhcute22/room-frontend:latest
+    image: vinhcute22/room_frontend:latest
     container_name: room_frontend
     restart: always
     ports:
