@@ -43,3 +43,4 @@ Dự án sử dụng Ansible để quản lý cấu hình và triển khai tự 
 
 2. Các Task tự động hóa chính
 Cài đặt môi trường: Tự động cài đặt Docker, Docker Compose và các thư viện hệ thống cần thiết.
+Live demo : 18.213.151.35:3000
